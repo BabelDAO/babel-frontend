@@ -11,5 +11,6 @@ export interface BondAddresses {
 }
 
 export interface NetworkAddresses {
+    // @ts-ignore
     [Networks.AVAX]: BondAddresses;
 }

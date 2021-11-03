@@ -45,6 +45,7 @@ export abstract class Bond {
     }
 
     public getAddressForBond(networkID: Networks) {
+        // @ts-ignore
         return this.networkAddrs[networkID].bondAddress;
     }
 
@@ -54,6 +55,7 @@ export abstract class Bond {
     }
 
     public getAddressForReserve(networkID: Networks) {
+        // @ts-ignore
         return this.networkAddrs[networkID].reserveAddress;
     }
 

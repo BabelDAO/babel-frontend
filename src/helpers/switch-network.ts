@@ -1,4 +1,5 @@
 import { Networks } from "../constants/blockchain";
+import cfg from "../config.json";
 
 const switchRequest = () => {
     return window.ethereum.request({
@@ -14,7 +15,7 @@ const addChainRequest = () => {
             {
                 chainId: "0xa86a",
                 chainName: "Avalanche Mainnet",
-                rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
+                rpcUrls: [cfg.rpcUrl || "https://api.avax.network/ext/bc/C/rpc"],
                 blockExplorerUrls: ["https://cchain.explorer.avax.network/"],
                 nativeCurrency: {
                     name: "AVAX",
